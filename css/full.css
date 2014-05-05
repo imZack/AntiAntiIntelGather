@@ -1,0 +1,20 @@
+body {
+	margin-top: 50px; /* 50px is the height of the navbar - change this if the navbarn height changes */
+	font-family: Arial, "微軟正黑體", "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "Microsoft JhengHei", "標楷體", DFKai-SB, sans-serif;
+}
+
+.full {
+/*
+	https://www.flickr.com/photos/romainguy/228635808/in/photolist-8D271w-4AksKW-9NL94X-5UF1uT-aBuVAa-2W4g7A-aBzgV4-aNb7Bt-8EVu52-9825K7-7cSPh8-7Nx5Ur-mcPsG-8D1ZDQ-741YWD-4GtCRp-6vTKk4-8rGLeu-dxtoBs-8E4FZG-5Kj9ME-7cSMsz-7Uy66R-7cSPcX-7UBkSA-8p26JY-8m784B-ee7ptT-54aUzW-kUDAmG-6GzWsn-68DR3L-6fm7aL-7cSMTP-7MWj2p-b3avJ6-9g2HVd-8EgzdL-3LYZsG-4b93Ar-6GDXTE-8CXY9c-4MyXwx-7UBkTA-8EZspw-6h98b1-6Vgoc-61gyKz-6h98aL-2Pd6UA
+*/
+  background: url(https://farm1.staticflickr.com/88/228635808_3fdb08e053_o.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.textzone {
+	width: 750px;
+	height: 500px;
+}

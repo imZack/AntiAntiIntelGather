@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Chinese writting style translate</title>
+    <title>中文橫直書轉換</title>
     <!-- Bootstrap core CSS -->
     <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS for the 'Full' Template -->
@@ -17,7 +17,7 @@
         <div class="row">
             <div class="col-md-12">
                 <h1 class="page-header">中文橫直書轉換
-                    <small><del>輕鬆反情蒐</del></small>
+                    <small><del>輕鬆反反情蒐</del></small>
                 </h1>
             </div>
         </div>
@@ -32,6 +32,7 @@
                         <textarea id="inputBox" class="form-control" rows="18"></textarea>
                         <br/>
                         <div style="text-align: center;">
+                            直排高度：<input type="text" id="heightBox" size="2" value="10">
                             <button id="toVerticalBtn" type="button" class="btn btn-lg btn-primary">轉直排</button>
                             <button id="toHorizonBtn" type="button" class="btn btn-lg btn-primary">轉橫排</button>
                         </div>
@@ -48,7 +49,7 @@
     </div>
 
     <!-- JavaScript -->
-    <script src="lib.js"></script>
+    <script src="//rawgit.com/imZack/Chinese-Writing-Style-Converter/master/cwsc.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js
 "></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/js/bootstrap.min.js"></script>
@@ -56,7 +57,8 @@
 
     $(document).ready(function() {
         $('#toVerticalBtn').click(function() {
-            $('#outputBox').val(converter.toVertical($('#inputBox').val()));
+            var height = $('#heightBox').val() || 10;
+            $('#outputBox').val(converter.toVertical($('#inputBox').val(), height));
         });
         $('#toHorizonBtn').click(function() {
             $('#outputBox').val(converter.toHorizon($('#inputBox').val()));
